@@ -1,8 +1,15 @@
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane
+
 fun main() {
     var story1 = AncestralStories("katana","Mercy","Risper")
     story1.storyLength("Once upon a time.")
     story1.storyLesson()
     story1.ageGroup()
+
+
+    var book1 = LibraryCatalogue("Born A Crime","Trevor Noah",100,"New")
+    book1.addingNewBook()
+
 }
 // 1. **Ancestral Stories:** In many African cultures, the art of storytelling is passed
 // down from generation to generation. Imagine you're creating an application that
@@ -32,6 +39,23 @@ fun main() {
     }
 
  }
+
+//8. Create a LibraryCatalog class that handles the cataloging and management of
+// books in a library. Implement methods to add new books, search for books by
+// title or author, keep track of available copies, and display book details.
+// Pseudo
+// input- books catalogue
+// output - managed books- libraryCatalogue class
+// process - create libraryCatalogue class with attributes:title,author,copies,state and methods:search,add new books
+
+class LibraryCatalogue(var title:String,var author:String,var copies:Int,var bookState:String){
+    fun addingNewBook(){
+        println("Books are now 30")
+    }
+}
+
+
+
 
 
 
