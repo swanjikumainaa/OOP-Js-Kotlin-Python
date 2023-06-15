@@ -23,7 +23,8 @@ fun main() {
          return words
      }
     fun storyLesson(){
-        println("The moral lesson of the story is:")
+        var lesson = "Work Hard"
+        println("The moral lesson of the story is:${lesson}")
     }
 
     fun ageGroup(){
